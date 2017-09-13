@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="stylesheets/famstyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Sedgwick+Ave+Display" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="reservation.html">Reserve Now!</a>
+      <a href="#">Contact Us</a>
+    </nav>
+
+
+    <h1 class="resHeader">Make Your Reservations Today!</h1>
+      <div class="personal">
+        <form>
+          <img src="images/fabweblogo.gif" alt="Family Affairs Moving Logo" class="img-responsive">
+        <fieldset>
+          <legend><h2>Personal Information</h2></legend>
+            <label for="">First Name: <input type="text" name="fname" required></label>
+            <label for="">Last Name: <input type="text" name="lname" required></label>
+            <label for="">Address: <input type="text" name="addr" required></label>
+            <label for="tel">Phone Number: <input type="tel" name="tel" required></label>
+            <label for="email">E-mail: <input type="email" name="email"></label>
+          </fieldset>
+        </form>
+      </div>
+      <div>
+        <form>
+      <fieldset>
+    <legend><h2>Moving Information</h2></legend>
+      <label for="">Address: <input type="text" name="firstaddr" placeholder="Address of Move" required>
+      Same As Above<input type="checkbox" name="chboxAddr" ></label>
+
+      <label for="date">Date for Move: <input type="date" name="date" required></label>
+
+      <label for="time">Start Time: <input type="time" name="time" required></label>
+
+      <label for="">Movers Needed: <select class="movers" required>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select></label>
+
+      <label for="">Hours Needed: <select class="hours" required>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select></label><br>
+      <label class="specinstruct">Special Instructions: <input type="textarea"
+        name="specinstruct" class="specinstruct" rows="6" cols="50"></label>
+
+      <button type="submit" name="submitbtn" class="formbtn">Submit</button>
+      <button type="button" name="cancelbtn" class="formbtn">Clear</button>
+    </fieldset>
+  </form>
+    </div>
+    <footer>Family Affairs Moving &copy; 2017</footer>
+  </body>
+</html>
