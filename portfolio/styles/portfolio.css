@@ -1,0 +1,81 @@
+body {
+  position: relative;
+}
+h1{
+  font-family: Rye,'cursive';
+  font-size:4em;
+}
+h2{
+  font-family: Gloria Hallelujah,'cursive';
+  font-size: 3em;
+}
+h3{
+  font-family:Rye,'cursive';
+  padding-bottom:30px;
+  font-size:2em;
+  text-decoration: underline;
+}
+iframe{
+  height:300px;
+  width: 75%;
+  border-radius:15px;
+}
+#about {
+  padding-top: 50px;
+  max-height: auto;
+}
+#exp,#contact{
+  background-color:#FFF;
+  max-height:auto;
+}
+#exp img{
+  max-width:150px;
+  max-height: 150px;
+  margin:5px;
+}
+#exp,#about,#contact,#sample {
+  margin-top:-20px;
+}
+#about,#sample{
+  background-color:lightblue;
+}
+
+#myPhoto {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+
+.col-xs-4{
+  margin-bottom:20px;
+}
+.slideanim{
+  visibility:hidden;
+}
+.slide{
+   animation-name: slide;
+   -webkit-animation-name: slide;
+   animation-duration: 3s;
+   -webkit-animation-duration: 3s;
+   visibility: visible;
+}
+  @keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
